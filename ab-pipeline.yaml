@@ -18,7 +18,7 @@ spec:
     type: None
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfile: "#!groovy\ndef appName=\"bluegreen\"\n\nnode {\n  def project =
+      jenkinsfile: "#!groovy\ndef appName=\"main\"\n\nnode {\n  def project =
         getProjectName()\n  \n  stage(\"Set Route Backends\") {\n    def userInput
         = input(\n    id: 'userInput', message: 'Let\\'s Adjust Routes ?', parameters:
         [\n        [$class: 'TextParameterDefinition', defaultValue: '100', description:
